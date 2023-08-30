@@ -29,9 +29,19 @@ public class PizzaAdicionada extends PizzaDecorador {
     @Override
     public double informarPreco() {
         if (ingredienteExtra == "Queijo") {
+            return super.informarPreco() + 92;
+        } else if (ingredienteExtra == "Presunto") {
+            return super.informarPreco() + 0.99;
+
+        } else if (ingredienteExtra == "Cebola") {
             return super.informarPreco() + 0.69;
+        } else if (ingredienteExtra == "Abacaxi") {
+            return super.informarPreco() + 0.79;
+        } else if (ingredienteExtra == "Salame") {
+            return super.informarPreco() + 0.99;
+        } else {
+            return super.informarPreco() + 0;
         }
-        return super.informarPreco();
     }
 
     @Override
