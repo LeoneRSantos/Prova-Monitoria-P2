@@ -47,7 +47,18 @@ public class PizzaAdicionada extends PizzaDecorador {
     @Override
     public String retornarIngredientes() {
         if (ingredienteExtra == "Queijo") {
-            return super.retornarIngredientes() + ", Queijo";
+            return super.retornarIngredientes() + ", " + ingredienteExtra;
+        } else if (ingredienteExtra == "Presunto") {
+            return super.retornarIngredientes() + ", " + ingredienteExtra;
+
+        } else if (ingredienteExtra == "Cebola") {
+            return super.retornarIngredientes() + ", " + ingredienteExtra;
+        } else if (ingredienteExtra == "Abacaxi") {
+            return super.retornarIngredientes() + ", " + ingredienteExtra;
+        } else if (ingredienteExtra == "Salame") {
+            return super.retornarIngredientes() + ", " + ingredienteExtra;
+        } else {
+            return super.retornarIngredientes() + ", " + ingredienteExtra;
         }
         return super.retornarIngredientes();
     }
