@@ -18,5 +18,9 @@ public class Main {
         p = new PizzaAdicionada(p, "Salame"); 
         imprimirInformacoes(p);
 
+        Bebida b = new Bebida(300, "Limonada", 138, 4.0);
+
+        System.out.println(b.toString());
+
     }
 }
