@@ -13,6 +13,9 @@ public class PizzaAdicionada extends PizzaDecorador {
     @Override
     public double informarCalorias() {
         if (ingredienteExtra == "Queijo") {
+            if (pizzaFamilia) {
+                return super.informarCalorias() + (92*1.95);
+            }
             return super.informarCalorias() + 92;
         } else if (ingredienteExtra == "Presunto") {
             return super.informarCalorias() + 35;
@@ -31,7 +34,10 @@ public class PizzaAdicionada extends PizzaDecorador {
     @Override
     public double informarPreco() {
         if (ingredienteExtra == "Queijo") {
-            return super.informarPreco() + 92;
+            if (pizzaFamilia) {
+                return super.informarPreco() + 0.69 + 4.15;
+            }
+            return super.informarPreco() + 0.69;
         } else if (ingredienteExtra == "Presunto") {
             return super.informarPreco() + 0.99;
 
