@@ -2,10 +2,12 @@ package src.models;
 
 public class PizzaAdicionada extends PizzaDecorador {
     private String ingredienteExtra;
+    private Boolean pizzaFamilia;
 
-    public PizzaAdicionada(Pizza pizza, String ingrediente) {
+    public PizzaAdicionada(Pizza pizza, String ingrediente, Boolean pizzaFamilia) {
         super(pizza);
-        this.ingredienteExtra = ingrediente;
+        this.ingredienteExtra = ingrediente; 
+        this.pizzaFamilia = pizzaFamilia;
     }
 
     @Override
