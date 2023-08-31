@@ -1,5 +1,7 @@
 package src;
 
+import src.models.Bebida;
+import src.models.Merchan;
 import src.models.Pizza;
 import src.models.PizzaAdicionada;
 import src.models.PizzaPadrao;
@@ -11,16 +13,20 @@ public class Main {
 
     }
 
-    public static void main(String[] args) { 
-        Pizza p = new PizzaPadrao("Marguerita", 1104, 10.00, "tomate, queijo"); 
+    public static void main(String[] args) {
+        Pizza p = new PizzaPadrao("Marguerita", 1104, 10.00, "tomate, queijo");
         imprimirInformacoes(p);
 
-        p = new PizzaAdicionada(p, "Salame"); 
+        p = new PizzaAdicionada(p, "Salame", true);
         imprimirInformacoes(p);
 
         Bebida b = new Bebida(300, "Limonada", 138, 4.0);
 
         System.out.println(b.toString());
+
+        Merchan m = new Merchan("Caneca", 8.00); 
+
+        System.out.println(m.toString());
 
     }
 }
