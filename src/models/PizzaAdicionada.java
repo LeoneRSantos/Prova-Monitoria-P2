@@ -28,7 +28,10 @@ public class PizzaAdicionada extends PizzaDecorador {
                 return super.informarCalorias() + (22 * 1.95);
             }
             return super.informarCalorias() + 22;
-        } else if (ingredienteExtra == "Abacaxi") {
+        } else if (ingredienteExtra == "Abacaxi") { 
+            if (pizzaFamilia) {
+                return super.informarCalorias() + (24*1.95);
+            }
             return super.informarCalorias() + 24;
         } else if (ingredienteExtra == "Salame") {
             return super.informarCalorias() + 26;
@@ -55,7 +58,10 @@ public class PizzaAdicionada extends PizzaDecorador {
                 return super.informarPreco() + 0.69 + 4.15;
             }
             return super.informarPreco() + 0.69;
-        } else if (ingredienteExtra == "Abacaxi") {
+        } else if (ingredienteExtra == "Abacaxi") { 
+            if (pizzaFamilia) {
+                return super.informarPreco() + 0.79 + 4.15;
+            }
             return super.informarPreco() + 0.79;
         } else if (ingredienteExtra == "Salame") {
             return super.informarPreco() + 0.99;
