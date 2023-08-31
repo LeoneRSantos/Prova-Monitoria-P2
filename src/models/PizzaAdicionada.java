@@ -1,4 +1,4 @@
-package models;
+package src.models;
 
 public class PizzaAdicionada extends PizzaDecorador {
     private String ingredienteExtra;
@@ -60,7 +60,6 @@ public class PizzaAdicionada extends PizzaDecorador {
         } else {
             return super.retornarIngredientes() + ", " + ingredienteExtra;
         }
-        return super.retornarIngredientes();
     }
 
 }
